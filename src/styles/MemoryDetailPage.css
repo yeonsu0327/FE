@@ -1,0 +1,311 @@
+body {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.header-banner {
+  max-width: 1920px;
+  height: 100px;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-banner .logo {
+  width: 137px;
+  height: 48px;
+  position: absolute;
+  top: 26px;
+}
+
+.memory-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 40px;
+}
+
+.memory-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.memory-edit,
+.memory-delete {
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #282828;
+}
+
+.memory-edit {
+  color: #282828;
+}
+
+.memory-delete {
+  color: #8d8d8d;
+}
+
+.memory-content {
+  margin-top: 20px;
+}
+
+.memory-header {
+  margin-bottom: 40px;
+}
+
+.memory-info {
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-bottom: 10px;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.memory-category::after {
+  content: " | ";
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  color: #8d8d8d !important;
+}
+
+.memory-status {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.memory-title {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #282828;
+}
+
+.memory-meta {
+  font-size: 14px;
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* 추가: 줄바꿈이 발생하지 않도록 설정 */
+}
+.comment-section {
+  display: flex;
+  align-items: center;
+}
+
+.comment-icon {
+  width: 20px; /* 아이콘 크기 설정 */
+  height: 20px;
+  margin-right: 5px; /* 아이콘과 댓글 수 사이의 간격 설정 */
+}
+
+.comment-count {
+  font-size: 14px;
+  color: #8d8d8d;
+}
+.memory-meta .meta-left {
+  display: flex;
+  align-items: center;
+}
+
+.memory-meta .meta-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.memory-meta span {
+  margin-right: 10px; /* 줄이 넘어가지 않도록 간격 조정 */
+  white-space: nowrap; /* 추가: 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.like-small-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0px; /* 공감수와 likesmall.svg를 좌측으로 이동 */
+}
+
+.like-small-icon {
+  margin-right: 5px;
+}
+
+.like-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.like-button {
+  cursor: pointer;
+  position: relative;
+  top: -10px; /* like.svg를 위로 올리기 */
+}
+
+.like-count {
+  font-size: 14px;
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+}
+
+.btn-main:hover {
+  background-color: #555;
+}
+
+.memory-image {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.memory-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.memory-description p {
+  font-size: 18px;
+  color: #282828;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px; /* 텍스트 영역의 최대 너비를 600px로 제한 */
+  margin: 0 auto; /* 텍스트를 가운데 정렬 */
+}
+
+.comments-section {
+  margin-top: 40px;
+  max-width: 1560px; /* 이미지와 동일한 너비로 제한 */
+  margin: 40px auto 0 auto; /* 가운데 정렬 */
+  padding: 0 20px; /* 양쪽에 여백 추가 */
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px; /* 댓글 리스트와의 간격 조정 */
+}
+
+.comment-form textarea {
+  display: none; /* 댓글 입력 필드 숨기기 */
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px; /* 댓글 등록하기 버튼과의 간격 추가 */
+}
+
+.comment-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  background-color: #fafafa; /* 댓글 아이템의 배경색 */
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #282828;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-left: 10px;
+}
+
+.comment-item p {
+  font-size: 16px;
+  color: #282828;
+  margin: 10px 0 0;
+}
+
+.custom-delete-modal-size .modal-dialog {
+  max-width: 480px;
+  margin: auto;
+}
+
+.custom-delete-modal-size .modal-content {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.delete-modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.delete-modal-footer {
+  border-top: none;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.delete-modal-title {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.05px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #282828;
+  width: 100%;
+}
+
+.delete-modal-body {
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+.delete-modal-label {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.03px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.delete-modal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.delete-btn-main {
+  width: 400px;
+  height: 50px;
+  background-color: #282828;
+  color: #fafafa;
+  border-radius: 6px;
+  border: none;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.delete-btn-main:hover {
+  background-color: #555555;
+}

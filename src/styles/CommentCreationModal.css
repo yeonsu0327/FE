@@ -1,0 +1,89 @@
+/* src/styles/CommentCreationModal.css */
+
+.custom-comment-modal-size .modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.custom-comment-modal-size .modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.custom-comment-modal-size .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.custom-comment-modal-size .modal-title {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #282828;
+  width: 100%;
+}
+
+.custom-comment-modal-size .modal-body {
+  padding-top: 0;
+}
+
+.custom-comment-modal-size .form-group {
+  margin-bottom: 15px;
+}
+
+.custom-comment-modal-size .form-group label {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #282828;
+}
+
+/* 입력 필드 스타일 */
+.custom-comment-modal-size .form-group input,
+.custom-comment-modal-size .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* 입력이 없을 때 테두리 색상 */
+.custom-comment-modal-size .form-group input:placeholder-shown,
+.custom-comment-modal-size .form-group textarea:placeholder-shown {
+  border-color: #dddddd; /* 입력이 없을 때 색상 */
+}
+
+/* 텍스트가 입력되었을 때 테두리 색상 */
+.custom-comment-modal-size .form-group input:not(:placeholder-shown),
+.custom-comment-modal-size .form-group textarea:not(:placeholder-shown) {
+  border-color: #282828; /* 텍스트가 입력되었을 때 색상 */
+}
+
+.custom-comment-modal-size .form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.custom-comment-modal-size .modal-footer {
+  border-top: none;
+  padding-top: 15px;
+}
+
+.custom-comment-modal-size .btn-main {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #282828;
+  color: #fafafa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-comment-modal-size .btn-main:hover {
+  background-color: #555555;
+}

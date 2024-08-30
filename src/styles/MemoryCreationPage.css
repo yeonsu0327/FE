@@ -1,0 +1,259 @@
+body {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.header-banner {
+  max-width: 1920px;
+  height: 100px;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-banner .logo {
+  width: 137px;
+  height: 48px;
+  position: absolute;
+  top: 26px;
+}
+
+.memory-creation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memory-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* 자식 요소의 중앙 정렬을 위해 relative로 설정 */
+}
+
+.memory-creation-container h1.title {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.05px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.left-section,
+.right-section {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 정렬을 위해 추가 */
+}
+
+.form-group {
+  margin-bottom: 35px;
+}
+
+.form-group label {
+  margin-bottom: 20px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.03px;
+  letter-spacing: -0.03em;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  color: #b8b8b8;
+  background-color: #fafafa;
+}
+
+.form-group input[type="date"].moment-input.active,
+.form-group input[type="text"]:not(:placeholder-shown),
+.form-group input[type="password"]:not(:placeholder-shown),
+.form-group textarea:not(:placeholder-shown),
+.file-upload-text.active {
+  border: 1px solid #282828;
+  color: #282828;
+  background-color: #fafafa;
+}
+
+.form-group input[type="date"].moment-input::placeholder,
+.form-group input[type="text"]::placeholder,
+.form-group input[type="password"]::placeholder,
+.form-group textarea::placeholder {
+  color: #b8b8b8;
+}
+
+/* 파일 업로드 스타일 */
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.file-upload-input {
+  display: none; /* 실제 파일 입력 필드를 숨김 */
+}
+
+.file-upload-text {
+  width: 290px;
+  height: 45px;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #dddddd !important;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  color: #b8b8b8 !important;
+  box-sizing: border-box;
+  opacity: 1;
+  text-align: left;
+}
+
+.file-upload-text.active {
+  border-color: #282828 !important;
+  color: #282828 !important;
+}
+
+.file-upload-button {
+  width: 100px;
+  height: 45px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #282828;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #282828;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+.file-upload-button:hover {
+  background-color: #fafafa;
+}
+
+.file-upload-input:focus,
+.file-upload-button:focus,
+.file-upload-text:focus {
+  outline: none;
+  border-color: #282828;
+}
+
+.memory-submit {
+  width: 400px;
+  height: 50px;
+  background-color: #282828;
+  color: #fafafa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -130px;
+  text-align: center;
+}
+
+.memory-submit:hover {
+  background-color: #282828;
+}
+
+.divider {
+  width: 1px;
+  background-color: #dddddd;
+  height: 90%; /* 높이를 입력 필드 사이의 90%로 설정 */
+  position: absolute;
+  opacity: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%; /* 상단에서 50% 아래에 위치 */
+  transform: translate(-50%, -50%); /* 가로 및 세로 중앙 정렬 */
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-group span {
+  margin-right: 15px;
+}
+
+.toggle-icon-wrapper {
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 40px;
+  height: 24px;
+}
+
+.textarea-fixed {
+  width: 400px;
+  height: 120px;
+  resize: none; /* 크기 조정 불가능하도록 설정 */
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  color: #dddddd;
+}
+
+/* 태그 스타일 */
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  background: #fafafa;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.tag-remove {
+  margin-left: 5px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  color: #b8b8b8;
+  background: #fafafa;
+  border-radius: 50%;
+  width: 8.87px;
+  height: 8.87px;
+  display: inline-block;
+}
