@@ -14,9 +14,9 @@ function MemoryCreationPage() {
   const [nickname, setNickname] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [place, setPlace] = useState(""); // 장소를 저장할 상태
-  const [imageFile, setImageFile] = useState(null); // 이미지 파일 상태 추가
-  const [password, setPassword] = useState(""); // 비밀번호 저장 상태 추가
+  const [place, setPlace] = useState("");
+  const [imageFile, setImageFile] = useState(null);
+  const [password, setPassword] = useState("");
 
   const fileInputRef = useRef(null);
   const navigate = useNavigate();
@@ -64,18 +64,17 @@ function MemoryCreationPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // 상태 객체에 입력된 데이터를 담아서 navigate로 전달
     navigate(`/memory/${title}`, {
       state: {
         nickname,
         title,
-        imageFile, // 이미지 파일 URL을 디테일 페이지로 전달
+        imageFile,
         content,
         tags,
         place,
         momentInput,
         isPublic,
-        password, // 비밀번호도 전달
+        password,
       },
     });
   };

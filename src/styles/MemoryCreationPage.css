@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* 자식 요소의 중앙 정렬을 위해 relative로 설정 */
+  position: relative;
 }
 
 .memory-creation-container h1.title {
@@ -118,7 +118,7 @@ body {
 }
 
 .file-upload-input {
-  display: none; /* 실제 파일 입력 필드를 숨김 */
+  display: none;
 }
 
 .file-upload-text {
@@ -196,8 +196,8 @@ body {
   opacity: 50%;
   left: 50%;
   transform: translateX(-50%);
-  top: 50%; /* 상단에서 50% 아래에 위치 */
-  transform: translate(-50%, -50%); /* 가로 및 세로 중앙 정렬 */
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .toggle-group {
@@ -221,7 +221,7 @@ body {
 .textarea-fixed {
   width: 400px;
   height: 120px;
-  resize: none; /* 크기 조정 불가능하도록 설정 */
+  resize: none;
   border-radius: 6px;
   border: 1px solid #dddddd;
   color: #dddddd;
