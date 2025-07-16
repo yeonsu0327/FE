@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🌌 기억 저장 및 공유 서비스, **조각집**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+조각집은 사용자가 **그룹을 생성하고 추억을 기록**하며, 서로의 추억에 공감을 표현할 수 있는 감성 아카이빙 서비스입니다.  
+각 그룹은 자신만의 추억을 저장하고 **특정 조건을 달성하면 배지를 획득**할 수 있어요.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📜 주요 기능
 
-### `npm start`
+### 📂 그룹 관리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 그룹 생성: 이름, 대표 이미지, 설명, 공개/비공개 여부 설정
+- 그룹 수정 및 삭제: 비밀번호로 안전하게 관리
+- 그룹별 추억 수, 공감 수, 배지 획득 현황 제공
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📝 추억 등록
 
-### `npm test`
+- 텍스트와 이미지로 추억 작성
+- 공개/비공개 설정 가능
+- 그룹별로 추억 자동 분류
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔍 추억 조회 및 수정
 
-### `npm run build`
+- 등록된 추억 목록 필터링 & 검색
+- 최신순, 공감순, 댓글순 정렬 지원
+- 추억 내용 수정 가능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💬 댓글 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 추억 상세 페이지에서 댓글 등록
+- 작성한 댓글 수정 및 삭제 가능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ✅ 실행 방법
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+로컬에서 실행하려면 다음 스크립트를 사용하세요:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# 설치
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 개발 서버 실행
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 빌드
+npm run build
 
-## Learn More
+# 테스트
+npm test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📸 구현 스크린샷
+1. **추억 등록 화면**
+<img width="1728" alt="memory_creation" src="https://github.com/user-attachments/assets/a83e97ce-df59-4ad5-af08-ce5ff99f2228">
+2. **추억 조회 화면**
+<img width="1728" alt="memory_detail" src="https://github.com/user-attachments/assets/56ffd3fc-99ad-4474-b7f8-efcc07b3be6e">
+3. **댓글 기능 화면**
+<img width="1728" alt="comment_function" src="https://github.com/user-attachments/assets/88556ab2-a878-4d22-8010-018f3d1604c6">
+```
