@@ -1,0 +1,136 @@
+.group-creation-container {
+  max-width: 600px; /* 가로 길이 줄임 */
+  margin: 130px auto 0 auto;
+  padding: 50px 20px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-banner {
+  width: 100%;
+  height: 100px;
+  background-color: #fafafa; /* 로고 배경색 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: fixed !important; /* 상단에 고정 */
+  top: 0 !important; /* 맨 위에 위치 */
+  left: 0;
+  z-index: 1000; /* 다른 요소들 위에 오도록 */
+}
+
+.header-banner img.logo {
+  width: 150px;
+  height: auto;
+}
+
+.group-creation-container h1.title {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.group-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282828;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  color: #282828;
+  background-color: #fafafa;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-upload-text {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  color: #b8b8b8;
+  background-color: #fafafa;
+}
+
+.file-upload-button {
+  padding: 12px 20px;
+  background-color: #fafafa;
+  color: #282828;
+  border: 1px solid #282828;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.file-upload-button:hover {
+  background-color: #383838;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon-wrapper {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 40px;
+  height: 24px;
+}
+
+.group-submit {
+  width: 100%;
+  max-width: 3000px;
+  padding: 15px;
+  background-color: #282828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.group-submit:hover {
+  background-color: #383838;
+}

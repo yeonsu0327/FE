@@ -1,0 +1,173 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fafafa;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.header-create-group-btn {
+  width: 100px;
+  height: 40px;
+  background-color: #282828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-create-group-btn:hover {
+  background-color: #383838;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fafafa;
+  color: #282828;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 22.5px;
+}
+
+.tab-button.active {
+  background-color: #282828;
+  color: white;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 22.5px;
+  background-color: #f4f4f4;
+  width: 1000px;
+}
+
+.sort-dropdown {
+  padding: 10px;
+  border: 1px solid #282828;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 상단 정렬 */
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 60px; /* 헤더와의 간격을 위해 마진 추가 */
+}
+
+.homepage-icon {
+  width: 100px;
+  height: 100px;
+  padding: 14.58px 7.21px 14.58px 14.58px;
+  opacity: 1;
+  margin-top: 20px; /* 헤더 아래의 간격을 유지 */
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 40px; /* 텍스트와 이미지 사이의 간격 증가 */
+}
+
+.no-group-text {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.54px;
+  letter-spacing: -0.03em;
+  color: #8d8d8d;
+  opacity: 1;
+}
+
+.make-group-text {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  color: #b8b8b8;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.create-group-btn {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  margin-top: 60px; /* 버튼 위치를 더 내림 */
+  border-radius: 6px;
+  background-color: #282828;
+  color: white;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.create-group-btn:hover {
+  background-color: #383838;
+}
+
+.group-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* 카드가 왼쪽에서 오른쪽으로 추가되도록 */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .homepage-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .no-group-text {
+    font-size: 16px;
+  }
+
+  .make-group-text {
+    font-size: 12px;
+  }
+
+  .create-group-btn {
+    font-size: 12px;
+    height: 45px;
+  }
+
+  .search-input {
+    width: 200px;
+  }
+
+  .sort-dropdown {
+    width: 120px;
+  }
+}

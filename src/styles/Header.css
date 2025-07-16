@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: center; /* 로고를 가운데 정렬 */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  width: 100%; /* 헤더가 전체 너비를 차지하도록 */
+  position: fixed; /* 헤더를 화면에 고정 */
+  top: 0; /* 페이지의 맨 위에 위치 */
+  z-index: 1000; /* 다른 요소들 위에 표시 */
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.header-create-group-btn {
+  position: absolute;
+  right: 20px; /* 오른쪽 끝에 배치 */
+  width: 80px;
+  height: 35px;
+  background-color: #282828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: Spoqa Han Sans Neo, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-create-group-btn:hover {
+  background-color: #383838; /* 호버 시 배경 색상 */
+}

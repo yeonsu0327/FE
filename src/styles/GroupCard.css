@@ -1,0 +1,50 @@
+.group-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px auto !important; /* 카드 전체를 수평 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px !important; /* 카드 크기 */
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+.group-image {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  margin-left: 0 !important; /* 이미지를 왼쪽 마진 없이 중앙에 배치 */
+}
+
+.group-info {
+  text-align: left !important; /* 텍스트만 왼쪽 정렬 */
+  width: 100% !important;
+}
+
+.group-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.group-description {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.group-meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.group-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px; /* 글자 크기 줄이기 */
+  color: #555;
+}

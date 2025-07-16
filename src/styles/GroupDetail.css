@@ -1,0 +1,271 @@
+body {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.header-banner {
+  max-width: 1920px;
+  height: 100px;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-banner .logo {
+  width: 137px;
+  height: 48px;
+  position: absolute;
+  top: 26px;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.group-image {
+  width: 220px !important; /* 이미지 크기 줄이기 */
+  height: 150px; /* 이미지 크기 줄이기 */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.group-info {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.group-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.group-description {
+  margin: 10px 0;
+}
+
+.group-badges {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.group-stats {
+  display: flex;
+  gap: 2px; /* D+0 | 공개 간격 줄이기 */
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.separator {
+  margin: 0 2px;
+}
+
+.group-likes-actions {
+  display: flex;
+  justify-content: flex-end; /* 공감 보내기 버튼을 오른쪽 정렬 */
+  align-items: center;
+  gap: 0px; /* 그룹 수정/삭제 버튼과 공감 보내기 버튼 간격 */
+  margin-right: 50px; /* 공감 버튼을 조금 왼쪽으로 */
+  margin-top: 30px; /* 공감 버튼을 조금 위로 */
+}
+
+.group-likes {
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.like-icon {
+  width: 200px; /* 공감 보내기 버튼 크기 키우기 */
+  height: 40px;
+  margin-right: -40px;
+}
+
+.group-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 50px; /* 그룹 수정/삭제 버튼을 더 위로 올리기 */
+  position: absolute;
+  top: 100px; /* 헤더 아래로 이동 */
+  right: 50px;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  color: #282828;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  color: #555555;
+}
+
+.group-body {
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 추가된 추억 올리기 버튼 */
+.group-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.group-body-header h2 {
+  flex-grow: 1; /* 중앙으로 정렬할 공간 확보 */
+  text-align: center; /* 추억 목록 중앙 정렬 */
+  margin: 0; /* 불필요한 여백 제거 */
+  margin-right: -200px;
+}
+.upload-memory-button {
+  width: 200px;
+  height: 45px;
+  border-radius: 6px;
+  opacity: 1; /* 버튼이 보이도록 수정 */
+  background-color: #282828; /* 버튼 배경색 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 38px;
+}
+
+.upload-memory-button span {
+  width: 66px;
+  height: 18px;
+  opacity: 1; /* 글자가 보이도록 수정 */
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #fafafa; /* 글자색 흰색으로 설정 */
+}
+
+.upload-memory-button:hover {
+  background-color: #555555; /* 마우스를 올렸을 때 색 변경 */
+}
+
+/* 공개/비공개 탭, 검색창, 드랍다운을 같은 줄에 배치 */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 35px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fafafa;
+  color: #282828;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 22.5px;
+}
+
+.tab-button.active {
+  background-color: #282828;
+  color: white;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 22.5px;
+  background-color: #f4f4f4;
+  width: 1300px; /* 검색창 길이를 더 길게 수정 */
+  margin: 0 10px;
+}
+
+.sort-dropdown {
+  padding: 10px;
+  border: 1px solid #282828;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 14px;
+}
+
+/* 추억이 없을 때의 스타일 */
+.no-memory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homepage-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.no-memory-text {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.54px;
+  letter-spacing: -0.03em;
+  color: #8d8d8d;
+  text-align: center;
+}
+
+.make-memory-text {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  color: #b8b8b8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.create-memory-button {
+  width: 400px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #282828;
+  color: #fafafa;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.create-memory-button:hover {
+  background-color: #555555;
+}

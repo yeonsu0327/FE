@@ -1,0 +1,343 @@
+body {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.header-banner {
+  max-width: 1920px;
+  height: 100px;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1000; /* 다른 콘텐츠보다 위에 위치 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-banner .logo {
+  width: 137px;
+  height: 48px;
+  position: absolute;
+  top: 26px;
+}
+
+.memory-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 0px;
+  padding-top: 120px;
+}
+
+.memory-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.memory-edit,
+.memory-delete {
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #282828;
+}
+
+.memory-edit {
+  color: #282828;
+}
+
+.memory-delete {
+  color: #8d8d8d;
+}
+
+.memory-content {
+  margin-top: 20px;
+}
+
+.memory-header {
+  margin-bottom: 40px;
+}
+
+.memory-info {
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-bottom: 10px;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.memory-category::after {
+  content: " | ";
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  color: #8d8d8d !important;
+}
+
+.memory-status {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.memory-title {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #282828;
+}
+
+.memory-meta {
+  font-size: 14px;
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.comment-section {
+  display: flex;
+  align-items: center;
+}
+
+.comment-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.comment-count {
+  font-size: 14px;
+  color: #8d8d8d;
+}
+.memory-meta .meta-left {
+  display: flex;
+  align-items: center;
+}
+
+.memory-meta .meta-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.memory-meta span {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.like-small-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+}
+
+.like-small-icon {
+  margin-right: 5px;
+}
+
+.like-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.like-button {
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+}
+
+.like-count {
+  font-size: 14px;
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+}
+
+.btn-main:hover {
+  background-color: #555;
+}
+
+.memory-image {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.memory-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.memory-description p {
+  font-size: 18px;
+  color: #282828;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comments-section {
+  margin-top: 40px;
+  max-width: 1560px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.comment-form textarea {
+  display: none;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.comment-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+  display: flex; /* 아이콘과 텍스트를 수평으로 배치 */
+  justify-content: space-between; /* 아이콘을 오른쪽 끝으로 보내기 위해 사용 */
+  align-items: center;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #282828;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-left: 10px;
+}
+
+.comment-text {
+  flex-grow: 1; /* 댓글 내용을 최대한 차지하도록 설정 */
+}
+
+.comment-actions {
+  display: flex; /* 아이콘들을 수평으로 배치 */
+  justify-content: flex-end; /* 아이콘들을 오른쪽 끝으로 정렬 */
+  align-items: center;
+}
+
+.comment-edit-icon,
+.comment-delete-icon {
+  cursor: pointer;
+  margin-left: 10px; /* 아이콘 간의 간격을 위해 추가 */
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #282828;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-left: 10px;
+}
+
+.comment-item p {
+  font-size: 16px;
+  color: #282828;
+  margin: 10px 0 0;
+}
+
+.custom-delete-modal-size .modal-dialog {
+  max-width: 480px;
+  margin: auto;
+}
+
+.custom-delete-modal-size .modal-content {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.delete-modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.delete-modal-footer {
+  border-top: none;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.delete-modal-title {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.05px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #282828;
+  width: 100%;
+}
+
+.delete-modal-body {
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+.delete-modal-label {
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.03px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.delete-modal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.delete-btn-main {
+  width: 400px;
+  height: 50px;
+  background-color: #282828;
+  color: #fafafa;
+  border-radius: 6px;
+  border: none;
+  font-family: "Spoqa Han Sans Neo", Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.delete-btn-main:hover {
+  background-color: #555555;
+}
