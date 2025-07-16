@@ -10,7 +10,6 @@
 ### 📂 그룹 관리
 
 - 그룹 생성: 이름, 대표 이미지, 설명, 공개/비공개 여부 설정
-- 그룹 수정 및 삭제: 비밀번호로 안전하게 관리
 - 그룹별 추억 수, 공감 수, 배지 획득 현황 제공
 
 ### 📝 추억 등록
@@ -51,9 +50,9 @@ npm test
 ```
 
 ## 📸 구현 스크린샷
-1. **추억 등록 화면**
+1. 추억 등록 화면
 <img width="1728" alt="memory_creation" src="https://github.com/user-attachments/assets/a83e97ce-df59-4ad5-af08-ce5ff99f2228">
-2. **추억 조회 화면**
+2. 추억 조회 화면
 <img width="1728" alt="memory_detail" src="https://github.com/user-attachments/assets/56ffd3fc-99ad-4474-b7f8-efcc07b3be6e">
-3. **댓글 기능 화면**
+3. 댓글 기능 화면
 <img width="1728" alt="comment_function" src="https://github.com/user-attachments/assets/88556ab2-a878-4d22-8010-018f3d1604c6">
