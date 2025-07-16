@@ -48,6 +48,7 @@ npm run build
 
 # 테스트
 npm test
+```
 
 ## 📸 구현 스크린샷
 1. **추억 등록 화면**
@@ -56,4 +57,3 @@ npm test
 <img width="1728" alt="memory_detail" src="https://github.com/user-attachments/assets/56ffd3fc-99ad-4474-b7f8-efcc07b3be6e">
 3. **댓글 기능 화면**
 <img width="1728" alt="comment_function" src="https://github.com/user-attachments/assets/88556ab2-a878-4d22-8010-018f3d1604c6">
-```
